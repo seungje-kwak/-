@@ -1,0 +1,5 @@
+function displayDone() {
+ console.log('Done!');
+}
+//setTimeout(displayDone(), 3000); // 즉시 실행
+setTimeout(displayDone, 3000); // 3초후 실행

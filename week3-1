@@ -1,0 +1,21 @@
+function nameOfFunction(parameter) {
+    //function body
+}
+
+function displayGreeting() {
+    console.log('Hello, world!');
+}
+
+displayGreeting();
+
+function name(param, param2, param3) {
+
+}
+
+function displayGreeting(name) {
+    const message = 'Hello, ${name}!';
+
+    console.log(message);
+}
+
+displayGreeting('Christopher');

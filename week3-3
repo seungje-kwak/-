@@ -1,0 +1,7 @@
+// TODO: Add hello code
+function getMessage(name) {
+ return 'Hello, ' + name + '...';
+}
+
+const message = getMessage('Ornella');
+document.write(message);
