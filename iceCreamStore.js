@@ -30,4 +30,15 @@ let flavorDistribution = transactions.reduce((acc, curr) => {
     })
     return acc;
    }, {}) // { Chocolate: 1, Vanilla: 3, Mint Chip: 1, Raspberry: 1, StrawBerry: 1 }
+   
+   
    console.log(flavorDistribution);
+
+   let mostSoldFlavor = Object.keys(flavorDistribution).reduce((mostPopular, flavor) => {
+    if (flavorDistribution[flavor] > flavorDistribution[mostPopular]) {
+        return flavor;
+    }
+    return mostPopular;
+}, Object.keys(flavorDistribution)[0]);
+
+console.log(`The most sold flavor is: ${mostSoldFlavor}`);
