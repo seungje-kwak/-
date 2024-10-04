@@ -1,7 +1,7 @@
 // blackjack.js
 let cardOne = 7;
 let cardTwo = 5;
-let cardThree = 10;
+let cardThree = 9;
 let sum = cardOne + cardTwo;
 let cardOneBank = 7;
 let cardTwoBank = 5;
