@@ -13,7 +13,6 @@ dragElement(document.getElementById('plant11'));
 dragElement(document.getElementById('plant12'));
 dragElement(document.getElementById('plant13'));
 dragElement(document.getElementById('plant14'));
-dragElement(document.getElementById('plant15'));
 
 let x = 10;
 function dragElement(terrariumElement) {
