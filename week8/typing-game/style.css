@@ -1,0 +1,53 @@
+.highlight {
+    background-color: yellow;
+}
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+body {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    flex-direction: column;
+    background-color :rgb(255, 170, 0);
+}
+
+.input {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    height : 30px;
+    align-items: center; /* 세로 중앙 정렬 */
+}
+.button {
+    width: 80px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    background-color:#fb0000;
+    border:none; 
+    border-radius:10px; 
+    padding:5px;
+}
+.button:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+}
+.button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+}
+.button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.7s;
+}
+
+#quote {
+    width: 100%;
+    border : solid;
+    border-color: black;
+    text-align: center;
+}
