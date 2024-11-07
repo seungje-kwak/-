@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Typing game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Typing game!</h1>
+    <p>Practice your typing skills with a quote from Sherlock Holmes. Click **start** to begin!</p>
+    <p id="high-record"></p>
+    <p id="your-record"></p>
+    <p id="quote"></p>
+    <div class = "input">
+        <input type="text" aria-label="current word" id="typed-value"/>
+    </div>
+    <div class = "button">
+        <button type="button" id="start">Start</button>
+    </div>
+    <div class="wheel-container">
+        <div id="wheel" class="wheel">
+          <div class="hamster">
+            <img src="hamster1.png" alt="햄스터 이미지" id="hamsterimg" width="40" height="40">
+          </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal_body">
+            <span class="close" id="closeBtn">&times;</span>
+            <h3> CONGRATULATIONS! </h3>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
