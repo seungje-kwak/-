@@ -20,9 +20,9 @@ img{width:80%; height: 80% ; margin-left: 8%; margin-right: 8%; margin-top: 8%;}
 h1{font-size: 17px; margin-left: 8px; margin-right: 8%; margin-top: 5%;text-align: center; font-weight: 600;}
 h2{font-size: 17px; margin-left: 13px; margin-right: 8%; margin-top: 5px;text-align: center;}
 .label1{margin-left: 100px; text-align: center; font-weight: bold; font-size: 13px}
-.label2{margin-left: 61px; font-weight: bold; font-size: 13px;}
-#region{margin-left: 65px}
-#api{margin-left: 5px;}
+.labeldiv{margin-left: 61px; font-weight: bold; font-size: 13px;}
+#region{margin-left: 65px; text-align: center}
+#api{margin-left: 5px; text-align:center}
 input[type=text] {background-color: #e9e9e9;border-radius: 5px; width: 145px;}
 div{margin-top:7px}
 .search-btn{width: 58px; background-color: #5a5aff; border-radius: 5px; color: #fff ; margin-left: 110px; margin-top:10px; padding:3px}
