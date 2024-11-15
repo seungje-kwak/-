@@ -13,6 +13,7 @@ let wordIndex = 0;
 let startTime = Date.now();
 let rotation = 0; // 초기 챗바퀴 회전 각도
 let imgMove =0;
+let quote;
 
 const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message');
@@ -21,14 +22,10 @@ const highRecordElement = document.getElementById('high-record');
 const yourRecordElement = document.getElementById('your-record');
 const wheelElement = document.getElementById("wheel");
 
-const quoteIndex = Math.floor(Math.random() * quotes.length); // 무작위 인덱스 생성
-const quote = quotes[quoteIndex]; // 무작위 인덱스 값으로 인용문 선택
-
-
 document.getElementById('start').addEventListener('click',() => {
     if(typedValueElement.disabled){typedValueElement.disabled =false}
     const quoteIndex = Math.floor(Math.random() * quotes.length); // 무작위 인덱스 생성
-    const quote = quotes[quoteIndex]; // 무작위 인덱스 값으로 인용문 선택
+    quote = quotes[quoteIndex]; // 무작위 인덱스 값으로 인용문 선택
     words = quote.split(' '); // 공백 문자를 기준으로 words 배열에 저장
     wordIndex = 0; // 초기화
 
@@ -47,7 +44,7 @@ document.getElementById('start').addEventListener('click',() => {
     if (highScore) {
         highRecordElement.innerText = `Highest Score: ${highScore / 1000}sec`;
     } else {
-        highRecordElement.innerText = 'Highest Score: None';
+        highRecordElement.innerText = `Highest Score: None`;
     }
 });
 
@@ -79,10 +76,9 @@ typedValueElement .addEventListener('input', () => {
         };
 
         yourRecordElement.innerText = `Your Record!: ${elapsedTime/1000}sec`;
-        const highScoreKey = `highScore_${quote}`;
-        const highScore = localStorage.getItem(highScoreKey);
+        const highScore = localStorage.getItem(`highScore_${quote}`);
         if (!highScore || elapsedTime < highScore) {
-            localStorage.setItem(highScoreKey, elapsedTime); // 새로운 최고 점수 저장
+            localStorage.setItem(`highScore_${quote}`, elapsedTime); // 새로운 최고 점수 저장
             highRecordElement.innerText = `New Highest Score: ${elapsedTime / 1000}sec`; // 갱신된 최고 점수 표시
         }
     } else if (typedValue .endsWith(' ') && typedValue .trim() === currentWord ) { // 입력된 값이 공백으로 끝났는지와 공백을 제거한 값이 현재 단어와 일치하는 지 확인
