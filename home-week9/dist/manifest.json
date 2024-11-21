@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Random Useless Facts",
+    "version": "0.1.0",
+    "description": "Displays a random useless fact from the Useless Facts API.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      }
+    },
+    "permissions": ["activeTab"],
+    "host_permissions": [
+      "https://uselessfacts.jsph.pl/*"
+    ]
+  }

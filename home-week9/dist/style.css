@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 300px; /* 팝업의 너비를 넓힘 */
+  }
+  
+  #container {
+    max-width: 400px; /* 콘텐츠의 최대 너비를 설정 */
+    margin: 0 auto;
+    text-align: center; /* 중앙 정렬 */
+  }
+  
+  #fetchFact {
+    display: block; /* 버튼을 블록으로 설정하여 중앙에 정렬 */
+    margin: 20px auto; /* 중앙 정렬을 위해 상하/좌우 여백 설정 */
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  #fact {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
